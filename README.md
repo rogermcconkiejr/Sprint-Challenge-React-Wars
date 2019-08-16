@@ -26,13 +26,23 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React is a JavaScript library, it’s a tool used for building UI components.  It was created by Facebook.  It solves many problems with the DOM rendering slowly- react has its own virtual  DOM that communicates with the real DOM.  This makes for much quicker loading times.  Another advantage of React are the many libraries that it gives us access to create our components.  
+
 - [ ] What does it mean to _think_ in react?
+
+React makes you think about how you’re going to build out an app from a component standpoint.  Everything that we create and style in React is broken into components.  We then have to think how we want to break it into a component hierarchy and how we’ll include props and state.
 
 - [ ] Describe state.
 
+State is a lot like data.  State is an object that determines what a component renders and how it behaves.  It makes it possible to build dynamic components to render data.
+
 - [ ] Describe props.
 
+Props are creation parameters.  They can be shared throughout different components and their values are functions. 
+
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
+
+A side-effect is anything that affect something outside the scope of the function being executed.  Some side effects can be positive, some can be negative.  We sync these effects in a React component to state or prop changes using useEffect.  UseEffect is a React hook that gives us the ability to control how these side-effects occur.  
 
 ## Project Set Up
 
