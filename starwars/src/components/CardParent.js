@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import CardChild from "./CardChild";
+import FlexContainer from 'react-styled-flexbox';
+
 
 function CardParent() {
     const [character, setCharacter] = useState([]);
@@ -16,19 +18,24 @@ function CardParent() {
         });
     }, []);
     return (
-      <div>
+        <FlexContainer wrapWrap = {true} justifySpaceAround = {true}>
     {character.map(character => {
               return (
+                
                 <CardChild
                   key = {character.created}
                   name={character.name}
                   height = {character.height}
                   mass = {character.mass}
                   hair_color = {character.hair_color}
+                  eye_color = {character.eye_color}
+                  skin_color = {character.skin_color}
+                  gender = {character.gender}
                 />
               );
             })}
-        </div>
+            
+        </FlexContainer>
     )
   }
   
