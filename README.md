@@ -26,7 +26,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What is React JS and what problems does it try and solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
-React is a JavaScript library, it’s a tool used for building UI components.  It was created by Facebook.  It solves many problems with the DOM rendering slowly- react has its own virtual  DOM that communicates with the real DOM.  This makes for much quicker loading times.  Another advantage of React are the many libraries that it gives us access to create our components.  
+React is a JavaScript UI library, it’s a tool used for building UI components. It helps developers build large-scale applications effectively. It was created by Facebook.  It solves many problems with the DOM rendering slowly- react has its own virtual  DOM that communicates with the real DOM.  This makes for much quicker loading times.  It also 'reacts' when the state (or data changes) and makes the correct changes to the components.  Another advantage of React are the many libraries that it gives us access to so that we can create our components.  
 
 - [ ] What does it mean to _think_ in react?
 
@@ -34,11 +34,11 @@ React makes you think about how you’re going to build out an app from a compon
 
 - [ ] Describe state.
 
-State is a lot like data.  State is an object that determines what a component renders and how it behaves.  It makes it possible to build dynamic components to render data.
+State is a lot like data.  State is an object that determines what a component renders and how it behaves.  It makes it possible to build dynamic components to render data.  A stateful component is one that holds data in React. 
 
 - [ ] Describe props.
 
-Props are creation parameters.  They can be shared throughout different components and their values are functions. 
+Props are creation parameters.  They are generally used to pass data when it needs to be used on multiple components.  Props can be passed from parent components to their children components, in short, they can be shared throughout different components. When it is sent down to a child component we can access it, just like we would access any other object.   
 
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
 
